@@ -1,0 +1,308 @@
+.all {
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-image: url(../image/02.jpg);
+  background-size: 100% 100%;
+}
+.show {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 40px 250px rgba(1, 1, 1, 0.5) inset;
+}
+.show .box {
+  width: 50%;
+  height: 70%;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: auto;
+  position: relative;
+}
+.show .box .back {
+  background-color: transparent;
+  z-index: 1000;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  font-weight: 700;
+  font-size: 16px;
+}
+.show .addBox {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+}
+.show .addBox .title {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-bottom: 3px solid #e8e8e8;
+}
+.show .addBox .title input {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.show .addBox .content {
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.show .addBox .content textarea {
+  width: 100%;
+  height: 100%;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+.show .addBox .keep {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  font-weight: 700;
+  font-size: 16px;
+}
+.show .showBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.show .showBox .title {
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+.show .showBox .title textarea {
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  border: none;
+}
+.show .showBox .content {
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.show .showBox .content textarea {
+  width: 100%;
+  height: 100%;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+.show .showBox .keep {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  font-weight: 700;
+  font-size: 16px;
+}
+.head {
+  width: 25%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) inset;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.head h1 {
+  letter-spacing: 5px;
+  color: #fff;
+  text-shadow: 0 0 10px #ff9dff80;
+}
+.function {
+  margin-top: 20px;
+  height: 60px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search {
+  position: relative;
+  width: 70%;
+  height: 60px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) inset;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.search input {
+  width: 70%;
+  height: 40px;
+  background-color: #FFF;
+  margin-left: 3%;
+  border-radius: 10px;
+}
+.search .searchBtn {
+  width: 15%;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  background-color: transparent;
+}
+.search .searchBtn i {
+  font-size: 24px;
+}
+.search .sea_content {
+  position: absolute;
+  top: 83%;
+  left: 3%;
+  width: 70%;
+  background-color: #e8e8e8;
+}
+.search .sea_content li {
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.search .sea_content li span {
+  font-size: 12px;
+  color: currentColor;
+}
+.search .sea_content li .key {
+  margin-right: 3px;
+  margin-left: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 5;
+  text-shadow: 0 0 10px #ff9dff80;
+}
+.search .sea_content li .nature {
+  float: right;
+  margin-right: 5px;
+  color: #999;
+}
+.search .sea_content li .index {
+  display: none;
+}
+.search .sea_content li:hover {
+  z-index: 1000;
+  background-color: #ad9d8b;
+}
+.add {
+  height: 60px;
+  width: 20%;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) inset;
+  border-radius: 10px;
+  line-height: 60px;
+  text-align: center;
+}
+.add .addBtn {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 0 0 10px #ff9dff80;
+}
+.c_head {
+  width: 25%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) inset;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+.c_head h1 {
+  letter-spacing: 5px;
+  color: #fff;
+  text-shadow: 0 0 10px #ff9dff80;
+}
+.allNote {
+  margin-top: 50px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: space-around;
+  align-content: space-evenly;
+}
+.allNote .note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(1, 1, 1, 0.5) inset;
+}
+.allNote .note .note_head {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  overflow: auto;
+}
+.allNote .note .note_head::-webkit-scrollbar {
+  display: none;
+}
+.allNote .note .note_head h1 {
+  color: #fff;
+  text-shadow: 0 0 10px #ff9dff80;
+  font-size: 36px;
+}
+.allNote .note .note_fun {
+  width: 50%;
+  height: 80px;
+  text-align: center;
+}
+.allNote .note .note_fun button {
+  background-color: transparent;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  margin-left: 1%;
+  box-shadow: 0 0 30px rgba(1, 1, 1, 0.5) inset;
+}
+.allNote .note .note_fun button i {
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 0 0 10px #ff9dff80;
+  color: #fff;
+}
+.allNote .note .note_fun button:hover {
+  z-index: 50;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5) inset;
+}
+.allNote .note .hidden {
+  display: none;
+}
